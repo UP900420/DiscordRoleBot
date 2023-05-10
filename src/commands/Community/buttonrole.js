@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { PermissionsBitField, ButtonStyle, ActionRowBuilder, ButtonBuilder, EmbedBuilder } = require('discord.js');
 
@@ -21,17 +20,17 @@ module.exports = {
     .addRoleOption(option => option.setName('role4').setDescription('This is the fourth role you want to set up'))
     .addRoleOption(option => option.setName('role5').setDescription('This is the fifth role you want to set up')),
 
-  async execute(interaction) {
+  async execute(interaction, client) {
     const role1 = interaction.options.getRole('role1');
     const role2 = interaction.options.getRole('role2');
     const role3 = interaction.options.getRole('role3');
     const role4 = interaction.options.getRole('role4');
     const role5 = interaction.options.getRole('role5');
 
-    let buttonGlobal = new ActionRowBuilder();
+    buttonGlobal = new ActionRowBuilder();
 
     if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) return await interaction.reply({ content: 'You must have admin to create a reaction role message', ephemeral: true });
-    const button = buttonGlobal
+    button = buttonGlobal
       .addComponents(
         new ButtonBuilder()
           .setCustomId('button1')
@@ -40,10 +39,10 @@ module.exports = {
       );
     buttonGlobal = button;
 
-    let blank = `React with the buttons below to get the specified roles! \n-${role1}`;
+    blank = `React with the buttons below to get the specified roles! \n-${role1}`;
 
-    if (role2 !== undefined || role2 != null) {
-      const button2 = buttonGlobal
+    if (role2 != undefined || role2 != null) {
+      button2 = buttonGlobal
         .addComponents(
           new ButtonBuilder()
             .setCustomId('button2')
@@ -54,8 +53,8 @@ module.exports = {
       blank += `\n-${role2}`;
     }
 
-    if (role3 !== undefined || role3 != null) {
-      const button3 = buttonGlobal
+    if (role3 != undefined || role3 != null) {
+      button3 = buttonGlobal
         .addComponents(
           new ButtonBuilder()
             .setCustomId('button3')
@@ -65,8 +64,8 @@ module.exports = {
       buttonGlobal = button3;
       blank += `\n-${role3}`;
     }
-    if (role4 !== undefined || role4 != null) {
-      const button4 = buttonGlobal
+    if (role4 != undefined || role4 != null) {
+      button4 = buttonGlobal
         .addComponents(
           new ButtonBuilder()
             .setCustomId('button4')
@@ -76,8 +75,8 @@ module.exports = {
       buttonGlobal = button4;
       blank += `\n-${role4}`;
     }
-    if (role5 !== undefined || role5 != null) {
-      const button5 = buttonGlobal
+    if (role5 != undefined || role5 != null) {
+      button5 = buttonGlobal
         .addComponents(
           new ButtonBuilder()
             .setCustomId('button5')
@@ -99,29 +98,28 @@ module.exports = {
 
     const collector = await interaction.channel.createMessageComponentCollector();
 
-    // eslint-disable-next-line require-await
     collector.on('collect', async (i) => {
       const member = i.member;
 
       if (i.guild.members.me.roles.highest.position < role1.position) {
         i.update({ content: "My role is below one of the roles that I'm trying to give; This reaction message has been shut down. ", embeds: [], ephemeral: true });
         return;
-      } else if (role2 !== undefined || role2 != null) {
+      } else if (role2 != undefined || role2 != null) {
         if (i.guild.members.me.roles.highest.position < role2.position) {
           i.update({ content: "My role is below one of the roles that I'm trying to give; This reaction message has been shut down. ", embeds: [], ephemeral: true });
           return;
         }
-      } else if (role3 !== undefined || role3 != null) {
+      } else if (role3 != undefined || role3 != null) {
         if (i.guild.members.me.roles.highest.position < role3.position) {
           i.update({ content: "My role is below one of the roles that I'm trying to give; This reaction message has been shut down. ", embeds: [], ephemeral: true });
           return;
         }
-      } else if (role4 !== undefined || role4 != null) {
+      } else if (role4 != undefined || role4 != null) {
         if (i.guild.members.me.roles.highest.position < role4.position) {
           i.update({ content: "My role is below one of the roles that I'm trying to give; This reaction message has been shut down. ", embeds: [], ephemeral: true });
           return;
         }
-      } else if (role5 !== undefined || role5 != null) {
+      } else if (role5 != undefined || role5 != null) {
         if (i.guild.members.me.roles.highest.position < role5.position) {
           i.update({ content: "My role is below one of the roles that I'm trying to give; This reaction message has been shut down. ", embeds: [], ephemeral: true });
           return;

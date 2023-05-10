@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable require-await */
-
 module.exports = {
   name: 'ready',
   once: true,
