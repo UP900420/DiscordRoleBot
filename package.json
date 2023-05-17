@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-parse": "^5.3.10",
+    "csv-to-js-parser": "^2.3.5",
+    "csvtojson": "^2.0.10",
     "discord.js": "^14.9.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "fast-csv": "^4.3.6",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "eslint": "^8.40.0",
