@@ -46,11 +46,11 @@ client.on('messageCreate', async (message) => {
   if(message.channelId != 1106731042007691335) return;
   for (var i = 0; i < student.length; i++) { 
     console.log(student[i].upnumber);
+    const person = message.member;
     if (message.content === student[i].upnumber) {
       message.author.send(`Hello, ${student[i].firstname}`);
       message.author.send(`You have been given the roles: Year ${student[i].year} and ${student[i].course} course and access to the co-existing channels`)
       message.author.send(`You also have been given the roles: member to access the public text channels`)
-      const person = message.member;
       console.log(`${student[i].year}`)
       let yearRole = person.guild.roles.cache.find(role => role.name === `Year ${student[i].year}`);
       console.log(`${student[i].course}`)
@@ -63,11 +63,17 @@ client.on('messageCreate', async (message) => {
       person.roles.remove(welcomeRole);
       person.setNickname(`${student[i].firstname} ${student[i].lastname.charAt(0)} | ${student[i].upnumber}`);
       break;
+    }
+      // adjustable password to give whatever the admin role is for teachers/lecturers etc.
+    else if (message.content === "specific admin password") {
+      let adminRole = person.guild.roles.cache.find(role => role.name === 'admin');
+      person.roles.add(adminRole);
+    }
       
       
       // set this up to give roles and nickname.
       // user.setNickname(`{${student[i].firstName} +${student[i].lastName} | ${student[i].upnumber}}`);
-    }
+    
   }
 });
 
