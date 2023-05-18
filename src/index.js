@@ -68,12 +68,7 @@ client.on('messageCreate', async (message) => {
     else if (message.content === "specific admin password") {
       let adminRole = person.guild.roles.cache.find(role => role.name === 'admin');
       person.roles.add(adminRole);
-    }
-      
-      
-      // set this up to give roles and nickname.
-      // user.setNickname(`{${student[i].firstName} +${student[i].lastName} | ${student[i].upnumber}}`);
-    
+    }   
   }
 });
 
