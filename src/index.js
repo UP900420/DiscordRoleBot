@@ -37,13 +37,13 @@ client.on('guildMemberAdd', guildMember => {
     
     guildMember.roles.add(welcomeRole);
     
-    client.channels.cache.get('1108863268883279972').send(`Welcome ${guildMember.user}, please enter your UP number into this channel to be allocated your roles.`), 1000;
+    client.channels.cache.get(`${process.env.channelid}`).send(`Welcome ${guildMember.user}, please enter your UP number into this channel to be allocated your roles.`), 1000;
 
 });
 
 // active message listener in the "no role channel to give roles to new users."
 client.on('messageCreate', async (message) => {
-  if(message.channelId != 1108863268883279972) return;
+  if(message.channelId != process.env.channelid) return;
   for (var i = 0; i < student.length; i++) { 
     
     const person = message.member;
