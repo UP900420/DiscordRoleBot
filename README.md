@@ -28,12 +28,20 @@ Then create a new role called **"norole"** and a new role called **"member"**
 ### 3. 
 
 Next, in line with the GIF below, create a channel in your server called "norole" and make it a private channel 
+https://github.com/UP900420/DiscordRoleBot/assets/72605069/cc2697ae-4603-4286-99ec-c427b6971329
+
 
 Then, in line with the GIF below, make sure to add @norole to it.
+https://github.com/UP900420/DiscordRoleBot/assets/72605069/cb5834c5-a7e6-438f-842d-049dac197c39
+
 
 After, in line with the GIF below, right click your new #norole channel and click **Edit Channel**, head to **Permissions** and scroll down to where you see **Roles/Members**
+https://github.com/UP900420/DiscordRoleBot/assets/72605069/9cba69d9-f600-40e2-a6e6-982e157ee237
+
 
 Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
+https://github.com/UP900420/DiscordRoleBot/assets/72605069/3eb704a5-ac0c-4c6e-936e-b07121ab1c0b
+
 
 ### 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" that can see inside it.
 
