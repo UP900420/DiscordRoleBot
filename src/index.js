@@ -71,11 +71,9 @@ client.on('messageCreate', async (message) => {
       person.roles.add(adminRole);
     }
   }
-
   if (message.author.bot) {
     setTimeout(() => { message.delete();}, 120000);
     return
-    
   }
   else {
     setTimeout(() => { message.delete();}, 20000);
