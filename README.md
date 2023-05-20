@@ -40,7 +40,8 @@ https://github.com/UP900420/DiscordRoleBot/assets/72605069/9cba69d9-f600-40e2-a6
 
 
 Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
-https://github.com/UP900420/DiscordRoleBot/assets/72605069/3eb704a5-ac0c-4c6e-936e-b07121ab1c0b
+
+![ebf991be2b06ce4ede89b05585d1ac9d](https://github.com/UP900420/DiscordRoleBot/assets/72605069/ef1b4a23-9a48-4977-973a-66848468511d)
 
 
 ### 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" that can see inside it.
