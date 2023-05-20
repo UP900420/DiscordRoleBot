@@ -15,11 +15,11 @@ user gives bot UP number (7 digits)
 bot compares up number given with up number on csv
 bot gives roles for year + course
 
-##1. On joining 
+## 1. On joining 
 
 ### On entering the server you are notified in server and in your DM's from the bot exclaiming that you need to put your UP number into the channel you can access. You'll find you can only access #norole.
 
-##2. On Entering UP Number.
+## 2. On Entering UP Number.
 
 ### Entering your UP number inside will give you your roles, access to the collective channels that co-align with the course and year you're in at University and change your name to your First Name and Last name Initial. - Your UPNumber. Additionally you will be notified by the bot of these changes through your DMs and given a member role within the server.
 
