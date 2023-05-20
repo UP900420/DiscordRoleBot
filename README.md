@@ -55,6 +55,11 @@ https://discord.com/api/oauth2/authorize?client_id=1099684282986938499&permissio
 ![ebf991be2b06ce4ede89b05585d1ac9d(1)](https://github.com/UP900420/DiscordRoleBot/assets/72605069/5f0a0398-f6d9-4194-8ece-1590e937764a)
 
 
-## 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" or roles that match the IDs of your CSV file such as "year number" or "course name" etc can only see into, that way the bot is automating its users into the channels they can only see into and out of.
+## 4. You're done!
+
+### Ensure you follow the steps for any future channels you make similarly by ensuring only members can see into the channel and @everyone can't see into it. Making new users HAVE to accept the stipulations of your entry system.
 
 # Slash Commands:
+
+/buttonrole
+/help
