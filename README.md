@@ -8,43 +8,53 @@ Additionally this is used as a multi-purpose role bot, including:
 -Reaction Roles! Both Buttons and Emoji Based.
 
 
-## User Instructions:
+# User Instructions:
 automatically on user joining server OR manually ran through command
 bot messages user asking for UP number
 user gives bot UP number (7 digits)
 bot compares up number given with up number on csv
 bot gives roles for year + course
 
-## Admin Instructions:
-### 1. Invite the Bot
-The bot invite can be found at this link. Once it is clicked make sure you invite it to the correct corresponding server you want the bot in.
+# Admin Instructions:
+## 1. Invite the Bot
+
+###The bot invite can be found at this link. Once it is clicked make sure you invite it to the correct corresponding server you want the bot in.
 https://discord.com/api/oauth2/authorize?client_id=1099684282986938499&permissions=8&scope=bot
 
-### 2. Edit Roles
-Next, in line with the GIF below, click to the right of your server name on the downward arrow and click **Server Settings** then click on **Roles** and click **Create Role**
+## 2. Edit Roles
+###Next, in line with the GIF below, click to the right of your server name on the downward arrow and click **Server Settings** then click on **Roles** and click **Create Role**
 
-Then create a new role called **"norole"** and a new role called **"member"**
+![c4b4d1a47903d6e868bf20c8bae673d3(1)](https://github.com/UP900420/DiscordRoleBot/assets/72605069/335c797e-a953-42cd-bf25-8031af649cd8)
 
-### 3. 
+###Then, in line with the GIF below, create a new role called **"norole"** and click save changes 
 
-Next, in line with the GIF below, create a channel in your server called "norole" and make it a private channel 
+![640832abfe917ac648190356ad66b8f9](https://github.com/UP900420/DiscordRoleBot/assets/72605069/e7e18bf0-efa4-45ce-8af2-9fcaf04c743c)
+
+###Then, in line with the GIF below, click the + and create another role called **"member"** and click save changes
+
+![85388dba832b35b1d734976955a698cf](https://github.com/UP900420/DiscordRoleBot/assets/72605069/715b2442-60aa-4ab9-b0dd-003bef52171e)
+
+## 3. 
+
+###Next, in line with the GIF below, create a channel in your server called "norole" and make it a private channel 
 
 ![4828ae3117f557df2756635bf070c285](https://github.com/UP900420/DiscordRoleBot/assets/72605069/41dcae9f-3d67-4f49-bcb8-ac3e9b7bae34)
 
-Then, in line with the GIF below, click next and make sure to add @norole to it.
+###Then, in line with the GIF below, click next and make sure to add @norole to it.
 
 ![da7a5e0bdd7bd6f40e7307d3d7bf856d](https://github.com/UP900420/DiscordRoleBot/assets/72605069/02195449-5ab0-48d9-aada-695962506c29)
 
 
-After, in line with the GIF below, right click your new #norole channel and click **Edit Channel**, head to **Permissions** and scroll down to where you see **Roles/Members**
-https://github.com/UP900420/DiscordRoleBot/assets/72605069/9cba69d9-f600-40e2-a6e6-982e157ee237
+###After, in line with the GIF below, right click your new #norole channel and click **Edit Channel**, head to **Permissions** and scroll down to where you see **Roles/Members**
+
+![79c2983a5dade6906044d62a75ebe3f3](https://github.com/UP900420/DiscordRoleBot/assets/72605069/8c3844e3-52be-45a8-b957-fa3db69ce56f)
 
 
-Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
+###Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
 
 ![ebf991be2b06ce4ede89b05585d1ac9d(1)](https://github.com/UP900420/DiscordRoleBot/assets/72605069/5f0a0398-f6d9-4194-8ece-1590e937764a)
 
 
-### 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" that can see inside it.
+## 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" that can see inside it.
 
-## Slash Commands:
+# Slash Commands:
