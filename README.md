@@ -30,7 +30,7 @@ https://discord.com/api/oauth2/authorize?client_id=1099684282986938499&permissio
 
 ![640832abfe917ac648190356ad66b8f9](https://github.com/UP900420/DiscordRoleBot/assets/72605069/e7e18bf0-efa4-45ce-8af2-9fcaf04c743c)
 
-### Then, in line with the GIF below, click the + and create another role called **"member"** and click save changes
+### After, in line with the GIF below, click the + and create another role called **"member"** and click save changes
 
 ![85388dba832b35b1d734976955a698cf](https://github.com/UP900420/DiscordRoleBot/assets/72605069/715b2442-60aa-4ab9-b0dd-003bef52171e)
 
@@ -50,11 +50,11 @@ https://discord.com/api/oauth2/authorize?client_id=1099684282986938499&permissio
 ![79c2983a5dade6906044d62a75ebe3f3](https://github.com/UP900420/DiscordRoleBot/assets/72605069/8c3844e3-52be-45a8-b957-fa3db69ce56f)
 
 
-###Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
+### Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
 
 ![ebf991be2b06ce4ede89b05585d1ac9d(1)](https://github.com/UP900420/DiscordRoleBot/assets/72605069/5f0a0398-f6d9-4194-8ece-1590e937764a)
 
 
-## 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" that can see inside it.
+## 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" or roles that match the IDs of your CSV file such as "year number" or "course name" etc can only see into, that way the bot is automating its users into the channels they can only see into and out of.
 
 # Slash Commands:
