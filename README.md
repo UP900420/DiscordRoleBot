@@ -16,12 +16,24 @@ bot compares up number given with up number on csv
 bot gives roles for year + course
 
 ## Admin Instructions:
-### 1. Firstly create your server and invite the bot to it utilising this link:
+### 1. Invite the Bot
+The bot invite can be found at this link. Once it is clicked make sure you invite it to the correct corresponding server you want the bot in.
 https://discord.com/api/oauth2/authorize?client_id=1099684282986938499&permissions=8&scope=bot
 
-### 2. Create a role in your server called "norole"
+### 2. Edit Roles
+Next, in line with the GIF below, click to the right of your server name on the downward arrow and click **Server Settings** then click on **Roles** and click **Create Role**
 
-### 3. Create a channel in your server called "norole" and make it a private channel, ensuring @everyone can't see it. But make @norole be able to see it and send messages and see message history.
+Then create a new role called **"norole"** and a new role called **"member"**
+
+### 3. 
+
+Next, in line with the GIF below, create a channel in your server called "norole" and make it a private channel 
+
+Then, in line with the GIF below, make sure to add @norole to it.
+
+After, in line with the GIF below, right click your new #norole channel and click **Edit Channel**, head to **Permissions** and scroll down to where you see **Roles/Members**
+
+Next, in line with the GIF below, click **norole** and allow them to **Send Messages** and **Read Message History** and click **Save Changes**
 
 ### 4. When developing other channels ensure that @everyone can't see the channel and make a new role called "member" that can see inside it.
 
