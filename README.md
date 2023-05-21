@@ -77,5 +77,6 @@ Also ensure the bots role "RoleBot" is above all other roles you want it to inte
 
 # Slash Commands:
 
-/buttonrole [role1] [role2] [role3] [role4] [role5] - NOTE: role1 is required, role2,3,4,5 are optional add as many as you'd like!
+/buttonrole [role1] [role2] [role3] [role4] [role5] - NOTE: role1 is required, role2,3,4,5 are optional add as many as you'd like! 
+
 /help - This will display the help command and show what instructions you could use in the server.
