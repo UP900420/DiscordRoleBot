@@ -81,19 +81,18 @@ Also ensure the bots role "RoleBot" is above all other roles you want it to inte
 ## 2. Install modules.
 
 Paste these in the terminal to make sure you have them:
-npm i discord.js
-npm i node.js
-npm i fast-csv
-npm i dotenv
+ - npm i discord.js
+ - npm i node.js
+ - npm i fast-csv
+ - npm i dotenv
 
 ## 3. Create .env file and input base data.
 
 Inside of the RoleBot directory create a .env file with the following values:
-
-token = YOUR BOT TOKEN HERE 
-clientid = YOUR BOT CLIENT TOKEN HERE
-channelid = YOUR NOROLE SERVER CHANNEL ID HERE
-adminpass = "YOUR SPECIFIED ADMIN GIVING PASSWORD HERE"
+- token = YOUR BOT TOKEN HERE 
+- clientid = YOUR BOT CLIENT TOKEN HERE
+- channelid = YOUR NOROLE SERVER CHANNEL ID HERE
+- adminpass = "YOUR SPECIFIED ADMIN GIVING PASSWORD HERE"
 
 ## 4. Create a CSV folder inside of the SRC directory
 
@@ -113,8 +112,7 @@ Paste a CSV file inside the new folder but save it to studentdata.csv or change 
 4. Click OAuth2 and copy the ClientID and post that in the clientid section in the .env file. like before.
 
 5. Click the URL Generator 
-
-    Within SCOPES tick the following
+    Within SCOPES tick the following:
   - bot
   - messages.read
   - guilds
