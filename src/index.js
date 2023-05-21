@@ -55,13 +55,13 @@ client.on('messageCreate', async (message) => {
       let yearRole = person.guild.roles.cache.find(role => role.name === `Year ${student[i].year}`);
       console.log(`${student[i].course}`)
       let courseRole = person.guild.roles.cache.find(role => role.name === `${student[i].course}`);
-      person.roles.add(yearRole);
-      person.roles.add(courseRole);
+      setTimeout(() => { person.roles.add(yearRole);}, 500);
+      setTimeout(() => { person.roles.add(courseRole);}, 500);
       let memberRole = person.guild.roles.cache.find(role => role.name === `member`);
-      person.roles.add(memberRole);
+      setTimeout(() => { person.roles.add(memberRole);}, 500);
       let welcomeRole = person.guild.roles.cache.find(role => role.name === 'norole');
-      person.roles.remove(welcomeRole);
-      person.setNickname(`${student[i].firstname} ${student[i].lastname.charAt(0)} | ${student[i].upnumber}`);
+      setTimeout(() => { person.roles.remove(welcomeRole);}, 500);
+      setTimeout(() => { person.setNickname(`${student[i].firstname} ${student[i].lastname.charAt(0)} | ${student[i].upnumber}`);}, 1000);
       console.log(`CSV ID:${[i]}`);
       break;
     }
