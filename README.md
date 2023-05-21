@@ -112,7 +112,7 @@ Paste a CSV file inside the new folder but save it to studentdata.csv or change 
 
     Within BOT PERMISSIONS tick Administrator
 
-    Scroll down and click copy generated URL and post post and enter that yourself into google and invite the Bot to your Discord server.
+    Scroll down and click copy generated URL and enter that yourself into google and invite the Bot to your Discord server.
 
 6. Enable Developer mode on Discord by going into the User Settings -> Advanced -> Developer Mode and ticking it.
 
