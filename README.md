@@ -122,7 +122,9 @@ Paste a CSV file inside the new folder but save it to studentdata.csv or change 
     
     Incase you wish to set one for when your admins join the server. Simply tell them to enter that phrase or password during the verification process and they will be given the role Admin should it have been made in the Server.
 
-7. Open the console within your code and open a node.js console and type nodemon. The bot should come online!
+7. Open the console within your code and open a node.js console and type nodemon 
+
+The bot should come online!
 
 # Slash Commands:
 
