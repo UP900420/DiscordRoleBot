@@ -66,7 +66,7 @@ client.on('messageCreate', async (message) => {
       break;
     }
       // adjustable password to give whatever the admin role is for teachers/lecturers etc.
-    else if (message.content === "specific admin password") {
+    else if (message.content === `${process.env.adminpassword}`) {
       let adminRole = person.guild.roles.cache.find(role => role.name === 'admin');
       person.roles.add(adminRole);
     }
