@@ -8,7 +8,6 @@
 ### Additionally this is used as a multi-purpose role bot, including:
 ### -Reaction Roles! Utilising button based role assignment slash commands!
 
-
 # User Instructions:
 
 ## 1. On joining 
@@ -74,6 +73,66 @@ Additionally if you'd like a csv input you must make a CSV folder called "csv" i
 Ensure you follow the steps for any future channels you make similarly by ensuring only members can see into the channel and @everyone can't see into it. Making new users HAVE to accept the stipulations of your entry system.
 
 Also ensure the bots role "RoleBot" is above all other roles you want it to interact with otherwise it will be unable to assign it!
+
+# Admin/Client Bot Installation Instructions:
+
+## 1. Download or fork the code from this file.
+
+## 2. Install modules.
+
+Paste these in the terminal to make sure you have them:
+npm i discord.js
+npm i node.js
+npm i fast-csv
+npm i dotenv
+
+## 3. Create .env file and input base data.
+
+Inside of the RoleBot directory create a .env file with the following values:
+
+token = YOUR BOT TOKEN HERE 
+clientid = YOUR BOT CLIENT TOKEN HERE
+channelid = YOUR NOROLE SERVER CHANNEL ID HERE
+adminpass = "YOUR SPECIFIED ADMIN GIVING PASSWORD HERE"
+
+## 4. Create a CSV folder inside of the SRC directory
+
+Paste a CSV file inside the new folder but save it to studentdata.csv or change it within the code (inside index.js)
+
+## 5. Go to https://discord.com/developers/applications
+
+1. Create a new application and name it what you want, click agree.
+
+2. Click the "Bot" tab and tick the Priveleged Gateway Intents for:
+ - "Presence Intent"
+ - "Server Members Intent"
+ - "Message Content Intent"
+
+3. Scroll up and click reset token copy that token and paste it in the .env file under token. e.g: token = "YOUR TOKEN HERE"
+
+4. Click OAuth2 and copy the ClientID and post that in the clientid section in the .env file. like before.
+
+5. Click the URL Generator 
+
+    Within SCOPES tick the following
+  - bot
+  - messages.read
+  - guilds
+  - guilds.join
+
+    Within BOT PERMISSIONS tick Administrator
+
+    Scroll down and click copy generated URL and post post and enter that yourself into google and invite the Bot to your Discord server.
+
+6. Enable Developer mode on Discord by going into the User Settings -> Advanced -> Developer Mode and ticking it.
+
+    Then open your Discord server where you have followed the previous Admin instructions and right click your "norole" channel. Click copy Channel ID and post that in your .env file in the channelid = "channel ID here"
+
+    Here you can also specify a specific password inside the .env file where adminpassword = "admin password here" 
+    
+    Incase you wish to set one for when your admins join the server. Simply tell them to enter that phrase or password during the verification process and they will be given the role Admin should it have been made in the Server.
+
+7. Open the console within your code and open a node.js console and type nodemon. The bot should come online!
 
 # Slash Commands:
 
