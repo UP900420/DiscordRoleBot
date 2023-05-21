@@ -59,7 +59,17 @@ Next, in line with the GIF below, click **norole** and allow them to **Send Mess
 ![ebf991be2b06ce4ede89b05585d1ac9d(1)](https://github.com/UP900420/DiscordRoleBot/assets/72605069/5f0a0398-f6d9-4194-8ece-1590e937764a)
 
 
-## 4. You're done!
+## 4. Setup .env file
+
+If the Admin has access to the bots code from this file, make a .env file outside the SRC directory in the Rolebot file and enclose:
+token = "BOT TOKEN HERE"
+clientid = "BOT IDENTIFICATION TOKEN HERE"
+channelid = "SPECIFIC NO ROLE CHANNEL ID"
+adminpass = "SPECIFIC ADMIN PASSWORD YOU WANT TO GIVE ADMIN ROLE IN YOUR SERVER"
+
+Additionally if you'd like a csv input you must make a CSV folder called "csv" inside the SRC directory and inside place a "studentdata.csv" file with the correct data inputs.
+
+## 5. You're done!
 
 Ensure you follow the steps for any future channels you make similarly by ensuring only members can see into the channel and @everyone can't see into it. Making new users HAVE to accept the stipulations of your entry system.
 
