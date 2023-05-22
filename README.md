@@ -68,6 +68,8 @@ In order to make the admin role work ensure you make an Admin role and give them
 
 # Admin/Client Bot Installation Instructions:
 
+NOTE: ENSURE YOU SET UP GO THROUGH THE ADMIN SETUP FOR THE SERVER FIRST AND FOLLOW ALL STEPS.
+
 ## 1. Download or fork the code from this file.
 
 ## 2. Install modules.
