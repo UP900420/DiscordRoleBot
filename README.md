@@ -74,11 +74,10 @@ NOTE: ENSURE YOU SET UP GO THROUGH THE ADMIN SETUP FOR THE SERVER FIRST AND FOLL
 
 ## 2. Install modules.
 
-Paste these in the terminal to make sure you have them:
- - npm i discord.js
- - npm i node.js
- - npm i fast-csv
- - npm i dotenv
+Paste this in the terminal to make sure you have them:
+ ```bash
+ npm i 
+ ```
 
 ## 3. Create .env file and input base data.
 
